@@ -44,7 +44,8 @@
         font-weight: bold;
     }
 
-    #name,#email {
+    #name,
+    #email {
         margin-left: 33px;
     }
 
@@ -92,7 +93,7 @@
         // console.log("myForm:",myForm);
 
         let name = myForm.name.value;
-        let number =myForm.number.value;
+        let number = myForm.number.value;
         let email = myForm.email.value;
         let password = myForm.password.value;
         //console.log("data:", name, email,password);
@@ -118,10 +119,10 @@
 
         localStorage.setItem("users", JSON.stringify(arr));
 
-        document.getElementById('name').value='';
-        document.getElementById('number').value='';
-        document.getElementById('email').value='';
-        document.getElementById('password').value='';
-        window.location.href = "home.html";
+        document.getElementById('name').value = '';
+        document.getElementById('number').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+        window.location.href = "index.html";
     }
 </script>
